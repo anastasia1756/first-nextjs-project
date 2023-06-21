@@ -1,0 +1,41 @@
+@import "src/app/variables.scss";
+
+.logo {
+  padding-top: 24px;
+}
+
+.links {
+  color: $mainColor;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  color: $mainColor;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.login_btn {
+  justify-content: flex-end;
+  padding: 18px 24px;
+  width: 87px;
+  height: 54px;
+  border-radius: 30px;
+}
+
+.start_btn {
+  justify-content: flex-end;
+  padding: 18px 24px;
+  width: 138px;
+  height: 54px;
+  border-radius: 30px;
+}
+
+.image {
+  text-align: right;
+}

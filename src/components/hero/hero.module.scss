@@ -1,0 +1,54 @@
+@import "src/app/variables.scss";
+
+.container {
+  margin-top: 238px;
+}
+.hero {
+  margin-top: 100px;
+}
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  color: $mainColor;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $secondaryMainColor;
+  max-width: 574px;
+  margin-bottom: 48px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.start_btn {
+  justify-content: center;
+  padding: 24px 36px;
+  width: 199px;
+  height: 66px;
+  border-radius: 40px;
+
+  &:after {
+    content: "";
+    display: block;
+    background: url("../../../public/icon.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+  }
+}
+.btn {
+  align-items: center;
+  padding: 24px 36px;
+  width: 173px;
+  height: 66px;
+  border-radius: 36px;
+}
+.image {
+  text-align: right;
+}

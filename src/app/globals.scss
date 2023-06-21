@@ -1,0 +1,94 @@
+@import "variables";
+
+body,
+#__next {
+  overflow-x: hidden;
+  hyphens: none;
+  color: $mainColor;
+}
+
+/*** FONTS ***/
+/*
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+@media (max-width: $medium) {
+  h1 {
+  }
+
+  h2 {
+  }
+
+  h3 {
+  }
+
+  h4 {
+  }
+}*/
+
+/*** CONTAINERS ***/
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 1400px;
+}
+
+@media (max-width: $medium) {
+  .container {
+    max-width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: $extraSmall) {
+  .container {
+    max-width: calc(100% - 30px);
+  }
+}
+
+/*** BUTTONS ***/
+
+.dark_buttons {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: $primaryColor;
+  background: $mainColor;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.light_buttons {
+  color: $mainColor;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: $mainColor;
+  background: $primaryColor;
+  border: 1px solid $borderColor;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*** LINKS ***/
+a {
+  text-decoration: none;
+  color: inherit;
+}
