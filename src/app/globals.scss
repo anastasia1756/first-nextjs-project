@@ -8,32 +8,44 @@ body,
 }
 
 /*** FONTS ***/
-/*
-h1 {
-}
 
-h2 {
-}
+// h1 {
+//   font-weight: 700;
+//   font-size: 56px;
+//   line-height: 66px;
+// }
 
-h3 {
-}
+// h2 {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 46px;
+// }
 
-h4 {
-}
+// h3 {
+//   font-weight: 700;
+//   font-size: 28px;
+//   line-height: 38px;
+// }
 
-@media (max-width: $medium) {
-  h1 {
-  }
+// h4 {
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 30px;
+// }
 
-  h2 {
-  }
+// @media (max-width: $medium) {
+//   h1 {
+//   }
 
-  h3 {
-  }
+//   h2 {
+//   }
 
-  h4 {
-  }
-}*/
+//   h3 {
+//   }
+
+//   h4 {
+//   }
+// }
 
 /*** CONTAINERS ***/
 .container-fluid {
@@ -73,7 +85,6 @@ h4 {
   line-height: 18px;
 }
 .light_buttons {
-  color: $mainColor;
   display: flex;
   flex-direction: row;
   align-items: center;

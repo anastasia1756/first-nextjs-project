@@ -1,0 +1,32 @@
+@import "src/app/variables.scss";
+
+.container {
+  padding: 180px 0;
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 67px;
+}
+
+.desc {
+  text-align: center;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+}
+.accent {
+  color: $secondaryMainColor;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+}
+
+.description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+}

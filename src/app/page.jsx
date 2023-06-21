@@ -1,5 +1,8 @@
-import Hero from "@/components/hero/Hero";
-import SocialMedia from "@/components/socialMedia/SocialMediaIcons";
+import GetStarted from "@/components/GetStarted/GetStarted";
+import Hero from "@/components/Hero/Hero";
+import Questions from "@/components/Questions/Questions";
+import Results from "@/components/Results/Results";
+import SocialMedia from "@/components/SocialMedia/SocialMediaIcons";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,7 +10,9 @@ export default function Home() {
     <main>
       <Hero />
       <SocialMedia />
-      <div>Home</div>
+      <GetStarted />
+      <Results />
+      <Questions />
     </main>
   );
 }
