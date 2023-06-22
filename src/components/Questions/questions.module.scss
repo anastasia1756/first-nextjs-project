@@ -1,0 +1,51 @@
+@import "src/app/variables.scss";
+
+.container {
+  padding-top: 176px;
+  border-bottom: 150px;
+
+  .title {
+    text-align: center;
+  }
+  .desc {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    color: $secondaryMainColor;
+  }
+}
+
+.accordion {
+  max-width: 991px;
+
+  .contentBx {
+    position: relative;
+    border: 1px solid $mainColor;
+    border-radius: 15px;
+    padding: 48px 60px;
+
+    .label {
+      position: relative;
+      cursor: pointer;
+      font-size: 24px;
+      line-height: 34px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url("../../../public/chevron-right.svg") no-repeat;
+        width: 36px;
+        height: 36px;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+    }
+    .content {
+      color: $secondaryMainColor;
+      max-width: 722px;
+    }
+  }
+}

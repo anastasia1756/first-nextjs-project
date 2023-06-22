@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 
-import "./globals.css";
+import "./globals.scss";
 
 import { DM_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";

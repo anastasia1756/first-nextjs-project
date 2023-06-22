@@ -1,0 +1,48 @@
+@import "src/app/variables.scss";
+
+.container {
+  padding-top: 172px;
+  border-bottom: 172px;
+
+  .title {
+    text-align: center;
+  }
+  .desc {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    color: $secondaryMainColor;
+  }
+}
+
+.card_list {
+  text-align: center;
+  .first_row {
+    margin-bottom: 56px;
+  }
+  .photo_items {
+    border: 1px solid $borderColor;
+    border-radius: 24px;
+    padding: 32px 56px 32px 40px;
+
+    .picture {
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+
+    .job_desc {
+      color: $secondaryMainColor;
+    }
+    .description {
+      color: $secondaryMainColor;
+      padding-bottom: 32px;
+    }
+
+    .social_list {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+}
