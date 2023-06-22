@@ -49,22 +49,24 @@ const Navbar = () => {
                 {link.title}
               </Link>
             ))}
-            <button
+            <Link
+              href="/"
               className={`light_buttons ${s.login_btn}`}
               onClick={() => {
                 console.log("logged in");
               }}
             >
               Login
-            </button>
-            <button
+            </Link>
+            <Link
+              href="/"
               className={`dark_buttons ${s.start_btn}`}
               onClick={() => {
                 console.log("get started");
               }}
             >
               Get started
-            </button>
+            </Link>
           </div>
         </div>
       </div>

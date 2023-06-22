@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import s from "./hero.module.scss";
 
@@ -15,22 +16,24 @@ const Hero = () => {
             phasellus mollis sit aliquam sit nullam neque ultrices.
           </h2>
           <div className={s.buttons}>
-            <button
+            <Link
+              href="/"
               className={`dark_buttons ${s.start_btn}`}
               onClick={() => {
                 console.log("get started");
               }}
             >
               Get started
-            </button>
-            <button
+            </Link>
+            <Link
+              href="/"
               className={`light_buttons ${s.btn}`}
               onClick={() => {
                 console.log("Talk to sales");
               }}
             >
               Talk to sales
-            </button>
+            </Link>
           </div>
         </div>
         <div className={`col-12 col-md-6 ${s.image}`}>

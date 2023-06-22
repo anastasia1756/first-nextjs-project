@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import s from "./getstarted.module.scss";
 
@@ -22,22 +23,24 @@ const GetStarted = () => {
             Create your account today and get started for free!
           </h2>
           <div className={s.buttons}>
-            <button
+            <Link
+              href="/"
               className={`light_buttons  ${s.start_btn}`}
               onClick={() => {
                 console.log("get started");
               }}
             >
               Get started
-            </button>
-            <button
+            </Link>
+            <Link
+              href="/"
               className={`dark_buttons ${s.btn}`}
               onClick={() => {
                 console.log("Talk to sales");
               }}
             >
               Talk to sales
-            </button>
+            </Link>
           </div>
         </div>
       </div>

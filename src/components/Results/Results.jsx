@@ -9,26 +9,26 @@ const Results = () => {
           <h2 className={s.title}>Our results in numbers</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <h3 className={s.desc}>
             99<span className={s.accent}>%</span>
           </h3>
           <p className={s.description}>Customer satisfaction</p>
         </div>
-        <div class="col">
+        <div className="col">
           <h3 className={s.desc}>
             32<span className={s.accent}>M</span>
           </h3>
           <p className={s.description}>Active users</p>
         </div>
-        <div class="col">
+        <div className="col">
           <h3 className={s.desc}>
             125<span className={s.accent}>+</span>
           </h3>
           <p className={s.description}>Team members</p>
         </div>
-        <div class="col">
+        <div className="col">
           <h3 className={s.desc}>
             240<span className={s.accent}>%</span>
           </h3>
