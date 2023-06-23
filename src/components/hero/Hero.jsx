@@ -29,7 +29,7 @@ const Hero = () => {
               href="/"
               className={`light_buttons ${s.btn}`}
               onClick={() => {
-                console.log("Talk to sales");
+                console.log("Talk");
               }}
             >
               Talk to sales

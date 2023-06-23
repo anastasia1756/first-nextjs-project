@@ -53,7 +53,7 @@ const Navbar = () => {
               href="/"
               className={`light_buttons ${s.login_btn}`}
               onClick={() => {
-                console.log("logged in");
+                console.log("loggedIn");
               }}
             >
               Login
