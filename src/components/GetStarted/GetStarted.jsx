@@ -7,7 +7,7 @@ import s from "./getstarted.module.scss";
 
 const GetStarted = () => {
   return (
-    <div className={`container`}>
+    <div className={`container ${s.container}`}>
       <div className="row">
         <div className={`col-12 col-md-6 px-0`}>
           <Image
@@ -18,7 +18,7 @@ const GetStarted = () => {
             alt="placeholder"
           />
         </div>
-        <div className={`col-12 col-md-6 ${s.container}`}>
+        <div className={`col-12 col-md-6 ${s.image_container}`}>
           <h2 className={s.desc}>
             Create your account today and get started for free!
           </h2>

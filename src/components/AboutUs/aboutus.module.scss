@@ -28,10 +28,18 @@
     .description {
       margin-bottom: 32px;
     }
-    .review,
+    .review {
+      color: $mainColor;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
     .list_name {
       color: $mainColor;
       font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
     }
   }
 }

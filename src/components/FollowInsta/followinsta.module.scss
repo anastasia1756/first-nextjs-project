@@ -6,6 +6,10 @@
 
   .title {
     text-align: center;
+
+    .accent {
+      color: $secondaryMainColor;
+    }
   }
 
   .desc {
@@ -22,8 +26,11 @@
   .btn {
     margin: 0 auto;
     justify-content: center;
-    max-width: 170px;
-    padding: 25px 50px;
+    max-width: 201px;
+    padding: 28px 56px;
     border-radius: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
   }
 }

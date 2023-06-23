@@ -8,7 +8,9 @@ const FollowInsta = () => {
     <div className={`container ${s.container}`}>
       <div className="row justify-content-md-center">
         <div className={`col-12 `}>
-          <h2 className={s.title}>Follow us on Instagram</h2>
+          <h2 className={s.title}>
+            Follow us on <span className={s.accent}>Instagram</span>
+          </h2>
           <h4 className={s.desc}>
             Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
             elementum tempus hac tellus libero accumsan.

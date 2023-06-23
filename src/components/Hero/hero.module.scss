@@ -1,10 +1,13 @@
 @import "src/app/variables.scss";
 
 .container {
-  margin-top: 238px;
+  padding-top: 238px;
+  padding-bottom: 120px;
 }
 .hero {
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title {
   font-weight: 700;
@@ -51,5 +54,4 @@
 }
 .image {
   text-align: right;
-  padding-bottom: 120px;
 }

@@ -24,13 +24,13 @@ const AboutUs = () => {
             alt="placeholder-small"
           />
 
-          <h4 className={s.review}>“An amazing service”</h4>
-          <p className={s.description}>
+          <h3 className={s.review}>“An amazing service”</h3>
+          <h4 className={s.description}>
             Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a
             nunc mauris scelerisque sed egestas.
-          </p>
-          <h4 className={s.list_name}>John Carter</h4>
-          <p className={s.job_desc}>Designer at BRIX Templates</p>
+          </h4>
+          <h3 className={s.list_name}>John Carter</h3>
+          <h4 className={s.job_desc}>Designer at BRIX Templates</h4>
         </div>
         <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
           <Image
@@ -41,13 +41,13 @@ const AboutUs = () => {
             alt="placeholder-small"
           />
 
-          <h4 className={s.review}>“One of a kind service”</h4>
-          <p className={s.description}>
+          <h3 className={s.review}>“One of a kind service”</h3>
+          <h4 className={s.description}>
             Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra
             diam sit amet nisl suscipit adipis.
-          </p>
-          <h4 className={s.list_name}>Sophie Moore</h4>
-          <p className={s.job_desc}>Head of Design at BRIX Templates</p>
+          </h4>
+          <h3 className={s.list_name}>Sophie Moore</h3>
+          <h4 className={s.job_desc}>Head of Design at BRIX Templates</h4>
         </div>
         <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
           <Image
@@ -58,13 +58,13 @@ const AboutUs = () => {
             alt="placeholder-small"
           />
 
-          <h4 className={s.review}>“The best service”</h4>
-          <p className={s.description}>
+          <h3 className={s.review}>“The best service”</h3>
+          <h4 className={s.description}>
             Convallis posuere morbi leo urna molestie at elementum eu facilisis
             sapien pellentesque habitant.
-          </p>
-          <h4 className={s.list_name}>Andy Smith</h4>
-          <p className={s.job_desc}>Developer at BRIX Templates</p>
+          </h4>
+          <h3 className={s.list_name}>Andy Smith</h3>
+          <h4 className={s.job_desc}>Developer at BRIX Templates</h4>
         </div>
       </div>
     </div>
