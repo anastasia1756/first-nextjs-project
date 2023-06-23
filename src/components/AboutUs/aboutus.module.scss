@@ -1,0 +1,37 @@
+@import "src/app/variables.scss";
+
+.container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  .title {
+    text-align: center;
+  }
+  .desc {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: $secondaryMainColor;
+  }
+
+  .card_item {
+    border: 1px solid $borderColor;
+    border-radius: 24px;
+    padding: 50px 40px;
+    max-width: 388px;
+    max-height: 412px;
+
+    .picture {
+      margin-bottom: 32px;
+    }
+    .description {
+      margin-bottom: 32px;
+    }
+    .review,
+    .list_name {
+      color: $mainColor;
+      font-weight: 700;
+    }
+  }
+}

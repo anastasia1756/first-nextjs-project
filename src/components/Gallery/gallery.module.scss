@@ -1,0 +1,20 @@
+@import "src/app/variables.scss";
+
+.container {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  .features {
+    padding-left: 78px;
+  }
+  .picture {
+    margin-bottom: 24px;
+  }
+  .desc:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  .placeholder {
+    text-align: right;
+  }
+}
