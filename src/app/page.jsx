@@ -8,7 +8,7 @@ import SocialMedia from "@/components/SocialMedia/SocialMediaIcons";
 import Features from "@/components/Features/Features";
 import FollowInsta from "@/components/FollowInsta/FollowInsta";
 import Gallery from "@/components/Gallery/Gallery";
-// import Image from "next/image";
+import ContactForm from "@/components/ContactForm/ContactForm";
 
 export default function Home() {
   return (
@@ -23,6 +23,7 @@ export default function Home() {
       <Features />
       <Gallery />
       <FollowInsta />
+      <ContactForm />
     </main>
   );
 }
