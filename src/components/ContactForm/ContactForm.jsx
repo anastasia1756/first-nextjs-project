@@ -18,6 +18,7 @@ const ContactForm = () => {
       <div className={`row justify-content-md-center`}>
         <div className={`col-12 col-md-6`}>
           <Image
+            className={s.placeholder}
             src="/placeholder.png"
             width={544}
             height={544}

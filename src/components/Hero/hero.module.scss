@@ -11,15 +11,12 @@
 }
 .title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 66px;
   color: $mainColor;
 }
 
 .desc {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+
   color: $secondaryMainColor;
   max-width: 574px;
   margin-bottom: 48px;
@@ -52,6 +49,28 @@
   height: 66px;
   border-radius: 36px;
 }
-.image {
+.image_wrapper {
   text-align: right;
+}
+@media (max-width: $medium) {
+  .container {
+    padding-top: 79px;
+  }
+  .image {
+    width: 382px;
+    height: 382px;
+  }
+  .image_wrapper {
+    text-align: center;
+  }
+}
+
+@media (max-width: $small) {
+  .btn,
+  .start_btn {
+    padding: 18px 24px;
+    margin-bottom: 50px;
+    width: 164px;
+    height: 54px;
+  }
 }

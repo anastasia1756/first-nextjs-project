@@ -8,13 +8,17 @@
     text-align: center;
     font-size: 72px;
     line-height: 80px;
+
+    @media (max-width: $medium) {
+      font-size: 36px;
+      line-height: 46px;
+    }
   }
   .desc {
     max-width: 720px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
-    color: $secondaryMainColor;
   }
 
   form {
@@ -80,5 +84,10 @@
     display: flex;
     gap: 16px;
     justify-content: center;
+  }
+}
+@media (max-width: $medium) {
+  .placeholder {
+    display: none;
   }
 }

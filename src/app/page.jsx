@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <SocialMedia />
+      {/* <SocialMedia />
       <GetStarted />
       <Results />
       <Questions />
@@ -23,7 +23,7 @@ export default function Home() {
       <Features />
       <Gallery />
       <FollowInsta />
-      <ContactForm />
+      <ContactForm /> */}
     </main>
   );
 }

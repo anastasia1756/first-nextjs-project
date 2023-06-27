@@ -3,9 +3,16 @@
 .container {
   padding-top: 76px;
   padding-bottom: 44px;
+  
 
   .footer_container {
     padding-bottom: 86px;
+  }
+
+  .logo_container {
+    @media (max-width: $medium) {
+      text-align: center;
+    }
   }
   .links {
     color: $thirdTextColor;
@@ -15,6 +22,16 @@
     gap: 40px;
     justify-content: center;
     padding-top: 10px;
+
+    @media (max-width: $small) {
+      flex-wrap: wrap;
+      max-width: 305px;
+      margin: 0 auto;
+    }
+    @media (max-width: $medium) {
+      margin-top: 45px;
+      margin-bottom: 50px;
+    }
   }
   .social_list {
     display: flex;
@@ -30,5 +47,19 @@
     font-size: 18px;
     line-height: 18px;
     padding-top: 32px;
+
+    @media (max-width: $small) {
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: $small) {
+    .divider {
+      display: none;
+    }
+
+    .reserved {
+      display: block;
+    }
   }
 }

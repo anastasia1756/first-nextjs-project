@@ -30,11 +30,12 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="container">
+    <div className={`container ${s.container}`}>
       <div className="row">
-        <div className={`col-12 col-md-5 ${s.logo}`}>
-          <Link href="/" className={s.logo}>
+        <div className={`col-6 col-md-5 ${s.logo}`}>
+          <Link href="/">
             <Image
+              className={s.logo_small}
               src="/logo-venice.png"
               width={290}
               height={61}
@@ -42,7 +43,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="col-12 col-md-7">
+        <div className={`col-6 col-md-7 ${s.nav_container}`}>
           <div className={s.links}>
             {links.map((link) => (
               <Link key={link.id} href={link.url} className={s.link}>
@@ -68,6 +69,7 @@ const Navbar = () => {
               Get started
             </Link>
           </div>
+          <div className={s.burger_button} />
         </div>
       </div>
     </div>

@@ -35,12 +35,12 @@ const Footer = () => {
   return (
     <div className={`container ${s.container}`}>
       <div className={`row ${s.footer_container}`}>
-        <div className={`col-3 `}>
+        <div className={`col-12 col-lg-3 ${s.logo_container}`}>
           <Link href="/" className={s.logo}>
             <Image src="/logo.png" width={261} height={34} alt="logo" />
           </Link>
         </div>
-        <div className={`col-6 `}>
+        <div className={`col-12 col-lg-6 `}>
           <div className={s.links}>
             {links.map((link) => (
               <Link key={link.id} href={link.url} className={s.link}>
@@ -49,7 +49,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className={`col-3`}>
+        <div className={`col-12 col-lg-3`}>
           <ul className={s.social_list}>
             <li>
               <Link
@@ -111,7 +111,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={`col-12 ${s.rights}`}>
-        Copyright © 2023 BRIX Templates | All Rights Reserved
+        Copyright © 2023 BRIX Templates <span className={s.divider}>|</span> <span className={s.reserved}>All
+        Rights Reserved</span>
       </div>
     </div>
   );
