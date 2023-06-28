@@ -18,3 +18,14 @@
     text-align: right;
   }
 }
+
+@media (max-width: $extraLarge) {
+  .container {
+    text-align: center;
+  }
+  .image {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }
+}

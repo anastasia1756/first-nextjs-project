@@ -6,7 +6,7 @@ const Gallery = () => {
   return (
     <div className={`container ${s.container}`}>
       <div className="row ">
-        <div className={`col-3 ${s.features}`}>
+        <div className={`col-12 col-xl-3 ${s.features}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"
@@ -31,8 +31,9 @@ const Gallery = () => {
             Paper prototypes should be considered when the following is true
           </h4>
         </div>
-        <div className={`col-9 ${s.placeholder}`}>
+        <div className={`col-12 col-xl-9 ${s.placeholder}`}>
           <Image
+            className={s.image}
             src="/placeholder-big.png"
             width={750}
             height={500}

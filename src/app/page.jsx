@@ -19,11 +19,11 @@ export default function Home() {
       <Results />
       <Questions />
       <Members />
-      {/* <AboutUs />
-      <Features />
+      {/* <AboutUs /> */}
+      {/* <Features /> */}
       <Gallery />
       <FollowInsta />
-      <ContactForm /> */}
+      {/* <ContactForm /> */}
     </main>
   );
 }
