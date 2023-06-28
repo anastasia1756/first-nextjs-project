@@ -14,12 +14,12 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      {/* <SocialMedia />
+      <SocialMedia />
       <GetStarted />
       <Results />
       <Questions />
       <Members />
-      <AboutUs />
+      {/* <AboutUs />
       <Features />
       <Gallery />
       <FollowInsta />

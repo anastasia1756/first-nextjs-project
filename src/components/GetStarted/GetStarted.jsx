@@ -8,7 +8,7 @@ import s from "./getstarted.module.scss";
 const GetStarted = () => {
   return (
     <div className={`container ${s.container}`}>
-      <div className="row">
+      <div className={`row ${s.row}`}>
         <div className={`col-12 col-md-6 px-0`}>
           <Image
             className={s.image}

@@ -43,3 +43,16 @@
     }
   }
 }
+
+@media (max-width: $medium) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+// @media (max-width: $small) {
+//   .card_list {
+//     gap: 24px;
+//   }
+// }

@@ -55,6 +55,7 @@
 @media (max-width: $medium) {
   .container {
     padding-top: 79px;
+    padding-bottom: 69px;
   }
   .image {
     width: 382px;
@@ -62,6 +63,12 @@
   }
   .image_wrapper {
     text-align: center;
+  }
+
+  .btn,
+  .start_btn {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -72,5 +79,16 @@
     margin-bottom: 50px;
     width: 164px;
     height: 54px;
+  }
+  .hero {
+    text-align: center;
+  }
+  .desc {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .buttons {
+    justify-content: center;
   }
 }

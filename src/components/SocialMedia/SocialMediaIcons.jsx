@@ -4,9 +4,9 @@ import s from "./socialmediaicons.module.scss";
 
 const SocialMedia = () => {
   return (
-    <div className={`container`}>
+    <div className="container">
       <div className="row">
-        <div className="col-6 col-md-12">
+        <div className={`col-6 col-md-12 ${s.images_wrapper}`}>
           <div className={s.images}>
             <Image src="/google.png" width={112} height={36} alt="google" />
             <Image src="/facebook.png" width={136} height={26} alt="facebook" />

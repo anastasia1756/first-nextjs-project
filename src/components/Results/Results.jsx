@@ -10,25 +10,25 @@ const Results = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col">
+        <div className="col-12 col-md-3">
           <h3 className={s.desc}>
             99<span className={s.accent}>%</span>
           </h3>
           <p className={s.description}>Customer satisfaction</p>
         </div>
-        <div className="col">
+        <div className="col-12 col-md-3">
           <h3 className={s.desc}>
             32<span className={s.accent}>M</span>
           </h3>
           <p className={s.description}>Active users</p>
         </div>
-        <div className="col">
+        <div className="col-12 col-md-3">
           <h3 className={s.desc}>
             125<span className={s.accent}>+</span>
           </h3>
           <p className={s.description}>Team members</p>
         </div>
-        <div className="col">
+        <div className="col-12 col-md-3">
           <h3 className={s.desc}>
             240<span className={s.accent}>%</span>
           </h3>

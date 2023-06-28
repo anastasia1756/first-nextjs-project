@@ -15,7 +15,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className={`row justify-content-md-center ${s.card_list}`}>
-        <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
+        <div className={`col-12 col-md-3 mx-3 ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"
