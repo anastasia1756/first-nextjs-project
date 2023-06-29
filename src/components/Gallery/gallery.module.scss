@@ -6,6 +6,9 @@
 
   .features {
     padding-left: 78px;
+    @media (max-width: $extraLarge) {
+      padding-left: 0;
+    }
   }
   .picture {
     margin-bottom: 24px;
@@ -27,5 +30,11 @@
     margin: 0 auto;
     display: block;
     margin-top: 50px;
+  }
+}
+@media (max-width: $medium) {
+  .image {
+    width: 382px;
+    height: 382px;
   }
 }

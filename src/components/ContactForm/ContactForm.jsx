@@ -15,8 +15,8 @@ const ContactForm = () => {
           </h4>
         </div>
       </div>
-      <div className={`row justify-content-md-center`}>
-        <div className={`col-12 col-md-6`}>
+      <div className={`row justify-content-md-center ${s.form_container}`}>
+        <div className={`col-12 col-lg-6`}>
           <Image
             className={s.placeholder}
             src="/placeholder.png"
@@ -25,7 +25,7 @@ const ContactForm = () => {
             alt="placeholder"
           />
         </div>
-        <div className={`col-12 col-md-6`}>
+        <div className={`col-12 col-lg-6`}>
           <form className={s.form}>
             <div className={s.input_container}>
               <label className={s.label} for="name">
@@ -72,7 +72,7 @@ const ContactForm = () => {
               />
             </div>
 
-            <div className="full-width">
+            <div className={s.input_container}>
               <label className={s.label} for="message">
                 Leave us message
               </label>

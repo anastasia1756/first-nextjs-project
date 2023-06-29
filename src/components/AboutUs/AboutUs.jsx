@@ -15,7 +15,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className={`row justify-content-md-center ${s.card_list}`}>
-        <div className={`col-12 col-md-3 mx-3 ${s.card_item}`}>
+        <div className={`col ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"
@@ -32,7 +32,7 @@ const AboutUs = () => {
           <h3 className={s.list_name}>John Carter</h3>
           <h4 className={s.job_desc}>Designer at BRIX Templates</h4>
         </div>
-        <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
+        <div className={`col ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"
@@ -49,7 +49,7 @@ const AboutUs = () => {
           <h3 className={s.list_name}>Sophie Moore</h3>
           <h4 className={s.job_desc}>Head of Design at BRIX Templates</h4>
         </div>
-        <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
+        <div className={`col ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"

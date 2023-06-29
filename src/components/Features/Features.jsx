@@ -15,8 +15,8 @@ const Features = () => {
           </h4>
         </div>
       </div>
-      <div className={`row justify-content-md-center ${s.card_list}`}>
-        <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
+      <div className={`row justify-content-center ${s.card_list}`}>
+        <div className={`col  ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"
@@ -34,7 +34,7 @@ const Features = () => {
             Learn more
           </Link>
         </div>
-        <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
+        <div className={`col  ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"
@@ -52,7 +52,7 @@ const Features = () => {
             Learn more
           </Link>
         </div>
-        <div className={`col-12 col-md-4 mx-3 ${s.card_item}`}>
+        <div className={`col  ${s.card_item}`}>
           <Image
             className={s.picture}
             src="/placeholder-small.png"

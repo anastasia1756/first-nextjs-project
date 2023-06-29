@@ -15,15 +15,32 @@
     color: $secondaryMainColor;
   }
 
+  .card_list {
+    gap: 28px;
+
+    @media (max-width: $medium) {
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
   .card_item {
     border: 1px solid $borderColor;
     border-radius: 24px;
-    padding: 50px 40px;
-    max-width: 388px;
-    max-height: 412px;
+    padding: 0 40px;
+
+    @media (max-width: $medium) {
+      padding: 0 32px;
+    }
 
     .picture {
+      margin-top: 50px;
       margin-bottom: 32px;
+
+      @media (max-width: $medium) {
+        margin-top: 32px;
+      }
     }
     .description {
       margin-bottom: 32px;
@@ -40,6 +57,13 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 18px;
+    }
+    .job_desc {
+      margin-bottom: 50px;
+
+      @media (max-width: $medium) {
+        margin-bottom: 36px;
+      }
     }
   }
 }

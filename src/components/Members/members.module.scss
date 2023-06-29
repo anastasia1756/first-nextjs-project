@@ -21,7 +21,7 @@
 
   @media (max-width: $small) {
     gap: 24px;
-
+    margin: 0 auto;
     &:not(:last-child) {
       margin-bottom: 24px;
     }

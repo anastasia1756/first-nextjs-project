@@ -14,14 +14,33 @@
     margin-bottom: 60px;
     color: $secondaryMainColor;
   }
+  .card_list {
+    @media (max-width: $medium) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
   .card_item {
     text-align: center;
     border: 1px solid $borderColor;
     border-radius: 24px;
     padding: 56px 32px 60px;
-    max-width: 388px;
+    max-width: 360px;
     max-height: 563px;
+
+    @media (max-width: $large) {
+      max-width: 300px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @media (max-width: $medium) {
+        margin-bottom: 24px;
+        margin-right: 0;
+      }
+    }
 
     .picture {
       margin-bottom: 24px;
@@ -34,10 +53,13 @@
       color: $mainColor;
       font-weight: 700;
       font-size: 28px;
+      @media (max-width: $medium) {
+        font-size: 24px;
+      }
     }
 
     .btn {
-      padding: 24px 115px;
+      padding: 24px 36px;
       border: 1px solid $mainColor;
       border-radius: 40px;
     }
