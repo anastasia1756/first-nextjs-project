@@ -1,7 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import s from "./questions.module.scss";
 
+const data = [
+  {
+    question: "What is Webflow and why is it the best website builder?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean id volutpat imperdiet quis at pellentesque nunc commodo nunc purus pulvinar nisi fusce.",
+  },
+  {
+    question: "When did Webflow was founded?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean id volutpat imperdiet quis at pellentesque nunc commodo nunc purus pulvinar nisi fusce.",
+  },
+  {
+    question: "How do you clone a Webflow Template?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean id volutpat imperdiet quis at pellentesque nunc commodo nunc purus pulvinar nisi fusce.",
+  },
+  {
+    question: "Why is BRIX Templates the best Webflow agency?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean id volutpat imperdiet quis at pellentesque nunc commodo nunc purus pulvinar nisi fusce.",
+  },
+];
 const Questions = () => {
+  const handleClick = (event) => {
+    event.currentTarget.classList.toggle(`${s.active}`);
+  };
   return (
     <div className={`container ${s.container}`}>
       <div className="row justify-content-md-center">
@@ -14,27 +41,15 @@ const Questions = () => {
           </h4>
         </div>
         <div className={`col-12 ${s.accordion}`}>
-          <div className={`mb-4 ${s.contentBx}`}>
-            <h3 className={s.label}>
-              What is Webflow and why is it the best website builder?
-            </h3>
-            <h4 className={s.content}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit id
-              venenatis pretium risus euismod dictum egestas orci netus feugiat
-              ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci
-              in. Id sed montes.
-            </h4>
-          </div>
-          <div className={`mb-4 ${s.contentBx}`}>
-            <h3 className={s.label}>When did Webflow was founded?</h3>
-          </div>
-          <div className={`mb-4 ${s.contentBx}`}>
-            <h3 className={s.label}>How do you clone a Webflow Template?</h3>
-          </div>
-          <div className={`mb-4 ${s.contentBx}`}>
-            <h3 className={s.label}>
-              Why is BRIX Templates the best Webflow agency?
-            </h3>
+          <div className={`mb-4`}>
+            {data.map((item, i) => (
+              <div className={s.item} key={i}>
+                <div className={s.contentBx} onClick={handleClick}>
+                  <h3 className={s.label}>{item.question}</h3>
+                  <h4 className={`${s.content}`}>{item.answer}</h4>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

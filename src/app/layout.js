@@ -5,6 +5,7 @@ import "./globals.scss";
 import { DM_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import Script from "next/script";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -16,6 +17,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="/scripts/jquery-3.7.0.min.js"
+          type="text/javascript"
+          key="jqeury"
+          strategy={"beforeInteractive"}
+        ></Script>
+        <Script
+          src="/scripts/jquery.smartmenus.min.js"
+          type="text/javascript"
+          key="test"
+          strategy={"beforeInteractive"}
+        ></Script>
+        <Script
+          src="/scripts/main.js"
+          type="text/javascript"
+          key="main"
+          strategy={"beforeInteractive"}
+        ></Script>
+      </head>
       <body className={dmSans.className}>
         <Navbar />
         {children}

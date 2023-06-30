@@ -28,7 +28,7 @@ const ContactForm = () => {
         <div className={`col-12 col-lg-6`}>
           <form className={s.form}>
             <div className={s.input_container}>
-              <label className={s.label} for="name">
+              <label className={s.label} htmlFor="name">
                 Name
               </label>
               <input
@@ -39,7 +39,7 @@ const ContactForm = () => {
               />
             </div>
             <div className={s.input_container}>
-              <label className={s.label} for="email">
+              <label className={s.label} htmlFor="email">
                 Email
               </label>
               <input
@@ -50,7 +50,7 @@ const ContactForm = () => {
               />
             </div>
             <div className={s.input_container}>
-              <label className={s.label} for="phone">
+              <label className={s.label} htmlFor="phone">
                 Phone
               </label>
               <input
@@ -61,7 +61,7 @@ const ContactForm = () => {
               />
             </div>
             <div className={s.input_container}>
-              <label className={s.label} for="company">
+              <label className={s.label} htmlFor="company">
                 Company
               </label>
               <input
@@ -73,7 +73,7 @@ const ContactForm = () => {
             </div>
 
             <div className={s.input_container}>
-              <label className={s.label} for="message">
+              <label className={s.label} htmlFor="message">
                 Leave us message
               </label>
               <textarea

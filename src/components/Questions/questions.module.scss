@@ -24,7 +24,9 @@
     border: 1px solid $mainColor;
     border-radius: 15px;
     padding: 48px 60px;
-
+    &:not(last-child) {
+      margin-bottom: 24px;
+    }
     @media (max-width: $medium) {
       padding: 24px 24px;
     }
@@ -32,10 +34,6 @@
       position: relative;
       cursor: pointer;
 
-      @media (max-width: $medium) {
-        font-size: 18px;
-        line-height: 24px;
-      }
       &::before {
         content: "";
         position: absolute;
@@ -47,14 +45,45 @@
         right: -25px;
         transform: translateY(-50%);
       }
+      @media (max-width: $medium) {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
     .content {
       color: $thirdTextColor;
       max-width: 722px;
+      position: relative;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+      overflow-y: auto;
     }
   }
 }
 
+.accordion {
+  .contentBx {
+    &.active {
+      .content {
+        height: auto;
+        max-height: 9999px;
+        transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+      }
+    }
+  }
+}
+.accordion {
+  .contentBx {
+    &.active {
+      .label {
+        &::before {
+          background: url("../../../public/chevron-down.svg") no-repeat;
+        }
+      }
+    }
+  }
+}
 @media (max-width: $medium) {
   .container {
     padding-top: 60px;
